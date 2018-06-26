@@ -37,11 +37,11 @@ To jumpstart the blockchain you can download a binary file and import it into yo
 
 You will be dropped into a command line, download the [latest prebuilt blockchain binay file](http://blockchain.wavesnodes.com "latest prebuilt blockchain binay file"):
 
-	curl -s -L -o /var/lib/waves/blockchain-binary http://blockchain.wavesnodes.com/mainnet-0.13.3-1036741
+	curl -s -L -o /var/lib/waves/blockchain-binary http://blockchain.wavesnodes.com/mainnet-1031479
 
 And then clean your data folder and import the binary data:
 
-    rm -rf /var/lib/waves/data
+    rm -rdf /var/lib/waves/data
     importer /etc/waves/waves.conf /var/lib/waves/blockchain-binary
 
 After a sucessful import you will want to remove the binary file.
