@@ -11,4 +11,3 @@ RUN curl -s -L -o   /waves.deb https://github.com/wavesplatform/Waves/releases/d
 EXPOSE 6868 6886 6869
 USER waves:waves
 CMD ["/usr/share/waves/bin/waves","/etc/waves/waves.conf"]
-
