@@ -7,7 +7,7 @@
 FROM ubuntu:latest
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get -qq update && apt-get -qqy upgrade && apt-get -qqy install curl openjdk-8-jre-headless && apt-get -qqy clean
-RUN curl -s -L -o   /waves.deb https://github.com/wavesplatform/Waves/releases/download/v1.0.1/waves_1.0.1_all.deb && dpkg -i waves.deb
+RUN curl -s -L -o   /waves.deb https://github.com/wavesplatform/Waves/releases/download/v1.0.2/waves_1.0.2_all.deb && dpkg -i waves.deb
 EXPOSE 6868 6886 6869
 USER waves:waves
 CMD ["/usr/share/waves/bin/waves","/etc/waves/waves.conf"]
